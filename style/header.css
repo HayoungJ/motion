@@ -1,0 +1,40 @@
+header {
+  height: var(--header-height);
+  padding: 20px 0 25px;
+  border-bottom: 1px solid #dedede;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 36px;
+  color: var(--theme-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.header__action-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header__action-buttons > li {
+  margin: 0 7px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--theme-color);
+  text-transform: uppercase;
+  border: 1px solid var(--theme-color);
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.header__action-buttons > li:hover {
+  color: var(--font-white);
+  background-color: var(--theme-color);
+}
