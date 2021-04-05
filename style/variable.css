@@ -1,0 +1,11 @@
+:root {
+  --header-height: 140px;
+
+  --theme-color: #629064;
+  --alert-color: #dd2323;
+
+  --font-white: #f3f3f3;
+  --font-black: #333333;
+  --font-fade: #aeaeae;
+  --font-alert: #dd2323;
+}
