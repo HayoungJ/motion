@@ -1,0 +1,74 @@
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+  padding: 40px;
+}
+
+.card {
+  width: calc(25% - 20px);
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 10px 20px;
+  padding: 5px 7px 0;
+  border: 1px solid var(--theme-color);
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media only screen and (max-width: 850px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.card__desc {
+  font-size: 14px;
+  color: var(--font-fade);
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.card__content * {
+  width: 100%;
+}
+
+.content__todo {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.content__todo__checkbox {
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+}
+
+.content__todo > span {
+  line-height: 24px;
+}
+
+.content__todo__checkbox:checked + span {
+  text-decoration: line-through;
+}
+
+.card__delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  background-color: transparent;
+  color: var(--font-fade);
+}
+
+.card__delete:hover {
+  color: var(--font-alert);
+}
