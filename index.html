@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion</title>
+
+    <script type="module" defer src="./build/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f7756ac958.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <span class="header__title">Motion</span>
+      <ul class="header__action-buttons">
+        <li data-action="image">image</li>
+        <li data-action="video">video</li>
+        <li data-action="note">note</li>
+        <li data-action="todo">todo</li>
+      </ul>
+    </header>
+    <section class="cards"></section>
+    <section class="dialog-wrap dialog-wrap--input hide">
+      <form method="get" class="dialog dialog--input">
+        <div class="input">
+          <label for="input--title">Title</label>
+          <input type="text" id="input--title" />
+        </div class="input">
+        <div class="input">
+          <label for="input--description">Description</label>
+          <input type="text" id="input--description" />
+        </div class="input">
+        <div class="input content">
+          <label for="input--content" class="content__type">Content</label>
+        </div class="input">
+        <div class="input--button">
+          <button type="button" class="button__cancel input--button__cancel">Cancel</button>
+          <button type="submit" class="input--button__submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <section class="dialog-wrap dialog-wrap--delete hide">
+      <section class="dialog dialog--alert">
+        <span class="dialog--alert__text">The item will be deleted</span>
+        <button class="button__cancel alert--button__cancel">Cancel</button>
+        <button class="alert--button__delete">Delete</button>
+      </section>
+    </section>
+    <!-- <footer>footer</footer> -->
+  </body>
+</html>
