@@ -1,0 +1,39 @@
+@import url(./variable.css);
+@import url(./header.css);
+@import url(./cards.css);
+@import url(./dialog.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+  color: var(--font-black);
+  overflow: hidden;
+}
+
+ul,
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+image {
+  display: block;
+}
